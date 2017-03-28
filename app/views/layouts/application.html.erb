@@ -10,6 +10,7 @@
 
   <body>
     <%= yield %>
+  <!-- start Saasler (Production) -->
   <script type="text/javascript">
     ("undefined"==typeof window?global:window).__416c084fc49057a3260f322421d1699c=function(){var e={exports:{}},t=e.exports,n={module:e,exports:t},a=function(a){return function(r,o,i){var s,f,c="undefined"==typeof window?global:window,l=c.define;i=[i,o,r].filter(function(e){return"function"==typeof e})[0],o=[o,r,[]].filter(Array.isArray)[0],s=i.apply(null,o.map(function(e){return n[e]})),f=typeof s,"function"==typeof l&&l("string"==typeof r?r:a,o,i),"string"===f?s=String(s):"number"===f?s=Number(s):"boolean"===f&&(s=Boolean(s)),void 0!==s&&(t=e.exports=s)}}("__416c084fc49057a3260f322421d1699c");return a.amd=!0,function(e,n){if("function"==typeof a&&a.amd)a([],n);else if("undefined"!=typeof t)n();else{var r={exports:{}};n(),e.saasler_snippet=r.exports}}(this,function(){var e="https://saasler-production-static.s3.amazonaws.com/saasler.min.js",t="https://saasler-production-static.s3.amazonaws.com/saasler.min.css";!function(n,a){a.SV||!function(){var r=function(e){var t=n.createElement("script");t.type="text/javascript",t.async=!0,t.src=e;var a=n.getElementsByTagName("script")[0];a.parentNode.insertBefore(t,a)},o=function(e){var t=n.createElement("link");t.rel="stylesheet",t.type="text/css",t.href=e;var a=n.getElementsByTagName("script")[0];a.parentNode.insertBefore(t,a)};window.saasler=a,a.initParams=[],a.init=function(n,i,s){r(e),o(t),a.initParams=[n,i,s]},a.SV=1}()}(document,window.saasler||[])}),e.exports}.call(this);
     saasler.init('<%= saasler_tenant_id %>',
@@ -19,5 +20,6 @@
           intentListHeight: '600px'
         });
   </script>
+  <!-- end Saasler -->
   </body>
 </html>

@@ -38,6 +38,12 @@ gem 'jwe'
 gem 'jwt'
 gem 'rbnacl-libsodium', require: 'rbnacl/libsodium'
 
+# security updates Aug 28 2017
+gem 'loofah', '~> 2.2.1'
+gem 'nokogiri', '~> 1.8.2'
+gem 'rails-html-sanitizer', '~> 1.0.4'
+gem 'sprockets', '~> 3.7.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

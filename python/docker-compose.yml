@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    environment:
+      - TENANT_ID=TENANT_ID_KEY_HERE
+      - JWT_SECRET=JWT_SECRET_FROM_SAASLER_HERE
+      - SAASLER_PUBLIC_NACL=PUBLIC_KEY_FROM_SAASLER
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/pyth

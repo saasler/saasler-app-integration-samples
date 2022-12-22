@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "js-nacl": "^1.2.2",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.13"
